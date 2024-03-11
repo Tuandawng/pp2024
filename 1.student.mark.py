@@ -1,11 +1,11 @@
-def input_something(number):
+def input_something(number): 
     return int(input(f"Please enter the number of students: {number}"))
 
 def input_info():
     id = input("Enter student's id: ")
     name = input("Enter student's name: ")
     dob = input("Enter date of birth: ")
-    return id, name, dob  # Returning a tuple
+    return id, name, dob  
 
 def input_number_of_course():
     return int(input("Enter number of courses: "))
@@ -13,7 +13,7 @@ def input_number_of_course():
 def input_course_info():
     id = input("Enter course's id: ")
     name = input("Enter course's name: ")
-    return id, name  # Returning a tuple
+    return id, name  
 
 def main():
     students = []
