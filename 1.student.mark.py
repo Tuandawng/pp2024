@@ -1,11 +1,11 @@
 students = []
 courses = []
 
-def input_students():
+def input_number_of_students():
     return int(input("Enter number of students: "))
 
 def input_student_info():
-    for i in range(input_students()):
+    for i in range(input_number_of_students()):
         id = input("Enter student's id: ")
         name = input("Enter student's name: ")
         dob = input("Enter date of birth: ")
