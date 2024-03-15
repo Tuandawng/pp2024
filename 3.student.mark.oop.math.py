@@ -76,7 +76,7 @@ class SchoolSystem:
             if course.get_id() == course_id:
                 for student in self.__students:
                     mark = float(input(f"Input mark for {student.get_name()}: "))
-                    mark = math.floor(mark * 10) / 10  # Rounding down to 1-digit decimal
+                    mark = math.floor(mark * 10) / 10  
                     student.add_mark(course_id, mark)
                     course.get_marks()[student.get_id()] = mark
 
@@ -103,7 +103,7 @@ class SchoolSystem:
 
     def sort_students_by_gpa_descending(self):
         gpas = np.array([student.calculate_gpa() for student in self.__students])
-        sorted_indices = np.argsort(gpas)[::-1]  # Sort indices in descending order
+        sorted_indices = np.argsort(gpas)[::-1]  
         sorted_students = [self.__students[i] for i in sorted_indices]
         return sorted_students
 
