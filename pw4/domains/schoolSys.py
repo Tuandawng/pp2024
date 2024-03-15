@@ -1,5 +1,7 @@
 from student import Student
 from course import Course
+import math
+import numpy as np
 class SchoolSystem:
     def __init__(self):
         self.__students = []
